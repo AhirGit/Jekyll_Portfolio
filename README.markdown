@@ -1,7 +1,3 @@
----
-layout: post
-title:  "README"
----
 # Resume Host
 
 Host a portfolio online using Jekyll Static Generator so that multiple employers can easily check through
