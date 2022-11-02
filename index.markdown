@@ -1,5 +1,6 @@
 ---
 layout: home
+title: "Resume"
 ---
 # **Md Ahiduzzaman Ahir**
 +1-431-338-5123  
