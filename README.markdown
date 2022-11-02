@@ -1,10 +1,10 @@
 # Resume Host
 
-Host a portfolio online using Jekyll Static Generator so that multiple employers can easily check through
+## Purpose
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+**(Windows Only)**  
+Step-by-step procedure of hosting a portfolio online using Jekyll Static Generator so that multiple  
+employers can easily check through and the resume can be updated anytime
 
 ### Prerequisites
 
@@ -17,44 +17,78 @@ Google Chrome Browser
 Github
 ```
 
-### Installing
+### Instructions
 
-How to install Ruby and Jekyll in local host
+1. Markdown editor
 
-Use a markdown editor
+    Use a [markdown editor](https://www.readme.so/editor)  
+    And download the resume in markdown format  
+    EXAMPLE:
 
-```cmd
-http://www.readme.so/editor
-```
+    ```
+    README.md
+    ```
+2. Install Ruby
 
-And download the resume in markdown format  
-EXAMPLE:
+    latest version of Ruby from the [website](https://rubyinstaller.org/downloads/)
+    Use cmd to check if Ruby is installed or not by typing the following commands
+    ```console
+    ruby -v
+    gem -v
+    ```
+    ![Ruby Install](https://github.com/AhirGit/Jekyll_Portfolio/raw/comp3040A2_pages/Ruby%20installation.gif)
 
-```
-README.md
-```
+3. Install gem package manager and Jekyll using the following cmd commands
 
+    ```console
+    gem install jekyll bundler
+    ```
+    Use cmd to check if Jukyll is installed or not by typing the following commands
+    ```console
+    jekyll -v
+    ```
+4. Create a Jekyll site
 
+    Change current directory to the host directory and run the following  
+    cmd command to create the local host for the site
+    ```console
+    jekyll new directory_name
+    ```
+    Site has been created sucessfully
+5. Host your resume written in markdown
+    ```
+    Copy and paste your markdown code in  
+    directory_name/index.markdown
+    ```
+    At the very top of your markdown code input the code
+    ```markdown
+    ---
+    layout: home
+    title: "Resume"
+    ---
+    ```
+    to make sure the resume is in the first page of the site
+6. Push to GitHub repository  
+   **(Make sure you have a [GitHub Account](https://github.com/) and [GitHub Installed](https://git-scm.com/downloads)** in Windows  
+   ```markdown
+   - Click new repository in Github
+   - Name the repository similar to the directory_name
+   - Open config.yml
+   - Change baseurl: "" to baseurl: "directory_name"
+   - Use cd to make directory_name the current directory
+   ```
+   Type in the following commands in cmd (Enter after each command) to push all the files to GitHub repository
+   ```console
+   git init
+   git checkout -b directory_name_pages
+   git add .
+   git commit -m "initial commit#
+   git remote add origin https://github.com/GitAccount/directory_name.git
+   git push origin gh pages
+   ```
+   Go to the repository settings to find the website that you just created
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+   ![GitHub Push](https://raw.githubusercontent.com/AhirGit/Jekyll_Portfolio/comp3040A2_pages/GitHub%20Push.gif)
 
 ## Deployment
 
