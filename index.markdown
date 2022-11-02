@@ -1,7 +1,7 @@
 ---
 layout: home
+title: **Md Ahiduzzaman Ahir**
 ---
-# **Md Ahiduzzaman Ahir**
 +1-431-338-5123  
 ahirzaman09@gmail.com  
 [Linkedin Profile](https://www.linkedin.com/in/md-ahiduzzaman-ahir-56203117a)
